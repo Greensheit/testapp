@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST_2</title>
+</head>
+<body>
+        <table align="center" border="1px solid">
+        <tr>
+            <td><h1>Customer</h1></td>
+            <td><h1>Total</h1></td>
+            <td><h1>Date</h1></td>
+            <td><h1>Quantity</h1></td>
+            <td><h1>Item</h1></td>
+        </tr>
+        {% for x in response %}
+            <tr>
+                <td><h2>{{ x.customer }}</h2></td>
+                <td><h2>{{ x.total }}</h2></td>
+                <td><h2>{{ x.date }}</h2></td>
+                <td><h2>{{ x.quantity }}</h2></td>
+                <td><h2>{{ x.item }}</h2></td>
+            </tr>
+        {% endfor %}
+        </table>
+</body>
+</html>
